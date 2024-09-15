@@ -1,0 +1,258 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+/* Navbar */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #000;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.links a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #ff6347;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.hero-image img {
+    width: 600px;
+    height: 600px;
+    border-radius: 70%;
+    object-fit: cover;
+    border: 5px solid transparent;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.5);
+    transition: box-shadow 0.5s ease;
+}
+
+.hero-image img:hover {
+    box-shadow: 0 0 80px rgba(255, 0, 0, 0.8);
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.hero-content h1 span, .hero-content h2 span {
+    color: #f44336;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f44336;
+}
+
+.hire-me-btn {
+    background-color: #f44336;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.hire-me-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-content img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    height: 30px;
+    background-color: #ff6347;
+    line-height: 30px;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service-box {
+    width: 30%;
+    text-align: center;
+}
+
+.service-box i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 1rem;
+}
+
+/* Contact Section */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+/* Centering Section Headings and Adding Glow Effect */
+.section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    color: #fff;
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Glow Effect for Section Headings */
+.section h2 {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 
+                 0 0 20px rgba(255, 0, 0, 0.5),
+                 0 0 30px rgba(255, 0, 0, 0.3);
+    transition: text-shadow 0.5s ease;
+}
+
+.section h2:hover {
+    text-shadow: 0 0 20px rgba(255, 0, 0, 1), 
+                 0 0 40px rgba(255, 0, 0, 0.8),
+                 0 0 60px rgba(255, 0, 0, 0.6);
+}
+/* Carousel Section */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 200px; /* Set the size of the carousel items */
+    margin: 0 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

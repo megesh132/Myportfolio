@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Megesh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Megesh</div>
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="https://github.com/yourusername" target="_blank">Projects</a> <!-- Projects Link to GitHub -->
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-image">
+            <img src="img/1722262986630.jpeg" alt="Megesh">
+        </div>
+        <div class="hero-content">
+            <h1>Hey, I'm <span>Megesh</span></h1>
+            <h2>I'm a <span>Developer</span></h2>
+            <p>Welcome to my portfolio! I’m a passionate Python full-stack developer with expertise in building innovative solutions. From creating dynamic web applications to mastering data analytics, I’m ready to bring your ideas to life. Let’s collaborate to build something amazing – explore my work and get in touch if you’re looking for a dedicated professional to elevate your team</p>
+            <div class="social-icons">
+                <a href="https://github.com/megesh132/megesh" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/amarthaluru-megesh-869a7b277" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <a href="img/megeshResume.pdf.pdf" target="_blank" class="hire-me-btn">Hire me</a> <!-- Link to Resume -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="img/1722262986630.jpeg" alt="Profile Picture">
+            <p>Hello! I’m Amarthaluru Megesh, a dedicated and passionate Python full-stack developer with a keen interest in creating innovative web solutions and exploring new technologies. With a background in Electronics and Communication Engineering and hands-on experience in Python, Django, HTML, and JavaScript, I bring a diverse skill set to the table.
+
+                During my recent internship, I honed my skills in developing dynamic web applications, working on projects like a Snake game and a comprehensive portfolio website. My technical expertise is complemented by a strong foundation in data analytics, having completed courses in Python, Pandas, and Matplotlib.
+                
+                What drives me is the challenge of solving complex problems and transforming ideas into functional and user-friendly solutions. I’m always eager to learn and grow, whether it's through exploring new programming languages, tackling industry trends, or engaging with fellow tech enthusiasts.
+                
+                When I’m not coding, you’ll find me traveling, listening to music, or diving into new learning opportunities. I’m excited about the possibility of contributing to innovative projects and collaborating with professionals who share my passion for technology.
+                
+                Feel free to explore my portfolio and get in touch if you’re interested in working together or if you’d like to discuss potential opportunities.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Python Full-stack</h3>
+                <div class="skill-bar" style="width: 90%;">90%</div>
+            </div>
+            <div class="skill">
+                <h3>Data Analytics</h3>
+                <div class="skill-bar" style="width: 80%;">80%</div>
+            </div>
+            <div class="skill">
+                <h3>Java</h3>
+                <div class="skill-bar" style="width: 70%;">70%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <h2>Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-pencil-alt"></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+   <!-- Carousel Section -->
+<section id="carousel" class="carousel-section">
+    <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-item"><img src="img/Screenshot 2024-09-15 120840.png" alt="Image 1"></div>
+            <div class="carousel-item"><img src="img/Screenshot 2024-09-15 120907.png" alt="Image 2"></div>
+            <div class="carousel-item"><img src="img/Screenshot 2024-09-15 120721.png" alt="Image 3"></div>
+            <div class="carousel-item"><img src="img/Screenshot 2024-09-15 120752.png" alt="Image 4"></div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Megesh. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const carouselSlide = document.querySelector('.carousel-slide');
+        let counter = 1;
+        setInterval(() => {
+            carouselSlide.style.transform = 'translateX(' + (-counter * 100) + '%)';
+            counter++;
+            if (counter === 3) {
+                counter = 0;
+            }
+        }, 3000); // Change slide every 3 seconds
+    </script>
+</body>
+</html>
