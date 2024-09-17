@@ -256,3 +256,89 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding-top: 60px;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .skills-container, .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Mobile Responsive NavBar Fix */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        padding: 10px 0; /* Adjust padding */
+    }
+
+    .links a {
+        margin: 10px 0; /* Add vertical space between links */
+        font-size: 1rem; /* Reduce font size for mobile */
+    }
+
+    .logo {
+        font-size: 1.5rem; /* Adjust logo size */
+    }
+}
+/* Fix for About Me Section on Mobile */
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack the content vertically */
+        text-align: center; /* Center text alignment */
+    }
+
+    .about-content img {
+        width: 150px; /* Reduce image size */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .about-content p {
+        font-size: 1rem; /* Adjust paragraph font size */
+        line-height: 1.6; /* Adjust line spacing for better readability */
+        margin: 0 20px; /* Add side margins */
+    }
+}
+/* Global adjustments for mobile */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem; /* Reduce the size of the main heading */
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 20px; /* Add padding for better readability */
+    }
+}
+
+  
